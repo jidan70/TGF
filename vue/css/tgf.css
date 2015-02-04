@@ -1,0 +1,35 @@
+@font-face {
+font-family: 'ROUGD';
+src: url('./fonts/ROUGD.eot');
+src: local('ROUGD'), url('./fonts/ROUGD.woff') format('woff'), url('./fonts/ROUGD.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_45100">Text with this font applied</p> */
+.fontsforweb_fontid_45100 {
+font-family: 'ROUGD' !important;
+}
+
+@font-face {
+  font-family: 'BLOODSUC';
+  src: url('./fonts/BLOODSUC.eot');
+  src: local('BLOODSUC'), url('./fonts/BLOODSUC.woff') format('woff'), url('./fonts/BLOODSUC.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_577">Text with this font applied</p> */
+.fontsforweb_fontid_577 {
+  font-family: 'BLOODSUC' !important;
+}
+
+@font-face {
+  font-family: 'TransformersMovie';
+  src: url('./fonts/TransformersMovie.eot');
+  src: local('TransformersMovie'), url('./fonts/TransformersMovie.woff') format('woff'), url('./fonts/TransformersMovie.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TrueLies';
+  src: url('./fonts/TrueLies.eot');
+  src: local('TrueLies'), url('./fonts/TrueLies.woff') format('woff'), url('./fonts/TrueLies.ttf') format('truetype');
+}
+
+img{
+  width:100%;
+}
