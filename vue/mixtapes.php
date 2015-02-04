@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Team Gone Fly</title>
-  <link rel="stylesheet" href="css\bootstrap_cyborg.min.css">
+  <link rel="stylesheet" href="bootstrap\dist\css\bootstrap_cyborg.min.css">
   <link rel="stylesheet" href="css/tgf.css">
   <link rel="stylesheet" href="css/animate.css">
 
@@ -17,12 +17,17 @@
     <?php include('template/header.php') ?>
 
 
-    <div class="col-md-10 col-md-offset-1" style="border:#4682B4 solid 1px;;border-radius:5px;margin-top:80px;padding-top:15px;">
+    <div class="col-md-10 col-md-offset-1" style="border:#4682B4 solid 4px;;border-radius:5px;margin-top:80px;padding-top:15px;">
       <div>
         <div class="col-md-4">
           <div align="center"><embed src="http://www.datpiff.com/embed/mixtape/mc70b953/" quality="high" wmode="direct" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="507" height="221" allowScriptAccess="always" allowScripting="on"><br>
             <a class="btn btn-primary download" style="margin-bottom:10px;" href="http://www.datpiff.com/pop-mixtape-download.php?id=mc70b953" target="_blank">Download Mixtape</a>
           </div>
+        </div>
+        <div class="col-md-4">
+          <div align="center"><embed src="http://www.datpiff.com/embed/mixtape/m0ae63b5/" quality="high" wmode="direct" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="507" height="221" allowScriptAccess="always" allowScripting="on"><br>
+            <a class="btn btn-primary download" style="margin-bottom:10px;" href="http://www.datpiff.com/pop-mixtape-download.php?id=m0ae63b5" target="_blank">Download Mixtape</a>
+            </div>
         </div>
         <div class="col-md-4">
           <div align="center"><embed src="http://www.datpiff.com/embed/mixtape/m871c88b/" quality="high" wmode="direct" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="507" height="221" allowScriptAccess="always" allowScripting="on"><br>

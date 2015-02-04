@@ -1,4 +1,4 @@
-<div class="col-md-10 col-md-offset-1" style="border:#4682B4 solid 1px;border-radius:5px;padding-bottom:10px;padding-top:10px;">
+<div class="col-md-10 col-md-offset-1" style="border:#4682B4 solid 3px;border-radius:5px;padding-bottom:10px;padding-top:10px;">
   <div>
     <div class="col-md-2">
       <img src="images/logo2.jpg" style="border-radius:10px;">
@@ -8,12 +8,13 @@
     </div>
   </div>
   <div class="col-md-10 col-md-offset-2" style="margin-top:10px;">
-    <nav class="navbar navbar-default" style="border:#4682B4 solid 1px;">
+    <nav class="navbar navbar-default" style="border:#2a9fd6 solid 4px;background:#888888">
       <ul class="nav navbar-nav pull-right">
-        <li style="font-family:TrueLies;font-size:2em;" class=" navigation-champ"><a href="index.php">Home</a></li>
-        <li style="font-family:TrueLies;font-size:2em;" class="navigation-champ"><a href="mixtapes.php">Mixtapes</a></li>
-        <li style="font-family:TrueLies;font-size:2em;" class="navigation-champ"><a href="pictures.php">Pictures</a></li>
-        <li style="font-family:TrueLies;font-size:2em;" class="navigation-champ"><a href="videos.php">Videos</a></li>
+        <li style="font-family:TrueLies;font-size:2em;" class=" navigation-champ"><a style="color:#000;font-weight:bold" href="index.php">Home</a></li>
+        <li style="font-family:TrueLies;font-size:2em;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="mixtapes.php">Mixtapes</a></li>
+        <li style="font-family:TrueLies;font-size:2em;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="pictures.php">Pictures</a></li>
+        <li style="font-family:TrueLies;font-size:2em;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="videos.php">Videos</a></li>
+        <li style="font-family:TrueLies;font-size:2em;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="shop.php">Shop</a></li>
       </ul>
     </nav>
   </div>
