@@ -7,9 +7,6 @@
   <link rel="stylesheet" href="css/tgf.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-
-
-
   <style>
   </style>
 
@@ -33,7 +30,6 @@
       </div>
     </div>
 
-  </div>
 
   <div class="col-md-1" style="margin-top:10px;">
     <p><a href="#" target="_blank"><i class="fa fa-instagram fa-5x"></i></a></p>
@@ -41,6 +37,7 @@
 
   </div>
 
+  </div>
 
   <?php include('template/script.php') ?>
   <script src="https://apis.google.com/js/platform.js"></script>
