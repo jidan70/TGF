@@ -38,8 +38,8 @@ body{
 }
 
 .menu-nav{
-  background-image:url('../images/background.jpg');
-  background-position:60% 80px;
+  background-image:url('../images/background.jpg'), url('../images/treyp0000.jpg');
+  background-position:60% 80px,70% 60px;;
   background-repeat:no-repeat;
 }
 
