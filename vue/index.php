@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <style>
+  .icon-soc{
+    color:#4682b4;
+  }
   </style>
 
 </head>
@@ -32,8 +35,8 @@
 
 
   <div class="col-md-1" style="margin-top:10px;">
-    <p><a href="#" target="_blank"><i class="fa fa-instagram fa-5x"></i></a></p>
-    <p><a href="#" target="_blank"><i class="fa fa-youtube-square fa-5x"></i></a></p>
+    <p><a href="#" target="_blank"><i class="fa fa-instagram fa-5x icon-soc"></i></a></p>
+    <p><a href="#" target="_blank"><i class="fa fa-youtube-square fa-5x icon-soc"></i></a></p>
 
   </div>
 

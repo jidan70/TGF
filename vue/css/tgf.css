@@ -30,6 +30,11 @@ font-family: 'ROUGD' !important;
   src: local('TrueLies'), url('./fonts/TrueLies.woff') format('woff'), url('./fonts/TrueLies.ttf') format('truetype');
 }
 
+body{
+  background:url('../images/background0000.jpg') no-repeat, #060606;
+  background-position:50% 60px;
+}
+
 img{
   width:100%;
 }

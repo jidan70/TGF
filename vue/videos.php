@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="bootstrap/dist/css/bootstrap_cyborg.min.css">
   <link rel="stylesheet" href="css/tgf.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  
 
   <style>
   </style>
