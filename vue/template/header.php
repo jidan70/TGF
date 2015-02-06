@@ -1,11 +1,11 @@
-<div class="row hidden-xs hidden-sm">
+<div class="row hidden-xs hidden-sm menu-nav">
   <div class="col-md-10 col-md-offset-1" style="border:#4682B4 solid 4px;border-top:none;border-radius:0px 0px 5px 5px;padding-bottom:10px;padding-top:10px;">
     <div>
       <div class="col-md-2">
         <img src="images/logo2.jpg" style="border-radius:10px;">
       </div>
       <div class="col-md-9 col-md-offset-1">
-        <h1 style="font-family:TrueLies;font-size:9em;color:rgba(136,136,136,0.8);">TEAM GONE FLY</h1>
+        <h1 style="font-family:TrueLies;font-size:9em;color:rgba(136,136,136,1);">TEAM GONE FLY</h1>
       </div>
     </div>
     <div class="col-md-10 col-md-offset-2" style="margin-top:10px;">
@@ -22,7 +22,7 @@
     </div>
   </div>
 
-<div class="row hidden-lg hidden-md">
+<div class="row hidden-lg hidden-md menu-nav">
   <div class="col-md-10 col-md-offset-1" style="border:#4682B4 solid 4px;border-top:none;border-radius:0px 0px 5px 5px;padding-bottom:10px;padding-top:10px;">
     <div>
       <div class="col-md-2">
