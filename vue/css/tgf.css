@@ -31,8 +31,10 @@ font-family: 'ROUGD' !important;
 }
 
 body{
-  background:url('../images/background0000.jpg') no-repeat, #060606;
-  background-position:50% 60px;
+  background-image:url('../images/daddyo0000.jpg'),url('../images/backgroun2.jpg');
+  background-position:25% 10px,0px 0px;
+  background-repeat:no-repeat;
+
 }
 
 img{
