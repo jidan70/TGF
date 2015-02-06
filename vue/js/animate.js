@@ -24,3 +24,9 @@ function animationHover(element, animation){
       animationHover(this, 'flash');
     });
   });
+
+  $(document).ready(function(){
+    $('i').each(function() {
+      animationHover(this, 'swing');
+    });
+  });

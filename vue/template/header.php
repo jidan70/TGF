@@ -1,21 +1,47 @@
-<div class="col-md-10 col-md-offset-1" style="border:#4682B4 solid 3px;border-radius:5px;padding-bottom:10px;padding-top:10px;">
-  <div>
-    <div class="col-md-2">
-      <img src="images/logo2.jpg" style="border-radius:10px;">
+<div class="row hidden-xs hidden-sm">
+  <div class="col-md-10 col-md-offset-1" style="border:#4682B4 solid 4px;border-top:none;border-radius:0px 0px 5px 5px;padding-bottom:10px;padding-top:10px;">
+    <div>
+      <div class="col-md-2">
+        <img src="images/logo2.jpg" style="border-radius:10px;">
+      </div>
+      <div class="col-md-9 col-md-offset-1">
+        <h1 style="font-family:TrueLies;font-size:9em;color:#888888;">TEAM GONE FLY</h1>
+      </div>
     </div>
-    <div class="col-md-9 col-md-offset-1">
-      <h1 style="font-family:TrueLies;font-size:9em;color:#888888;">TEAM GONE FLY</h1>
+    <div class="col-md-10 col-md-offset-2" style="margin-top:10px;">
+      <nav class="navbar navbar-default" style="border:#2a9fd6 solid 4px;background:#888888">
+        <ul class="nav navbar-nav pull-right">
+          <li style="font-family:TrueLies;font-size:2em;" class=" navigation-champ"><a style="color:#000;font-weight:bold" href="index.php">Home</a></li>
+          <li style="font-family:TrueLies;font-size:2em;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="mixtapes.php">Mixtapes</a></li>
+          <li style="font-family:TrueLies;font-size:2em;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="pictures.php">Pictures</a></li>
+          <li style="font-family:TrueLies;font-size:2em;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="videos.php">Videos</a></li>
+          <li style="font-family:TrueLies;font-size:2em;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="shop.php">Shop</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
-  <div class="col-md-10 col-md-offset-2" style="margin-top:10px;">
-    <nav class="navbar navbar-default" style="border:#2a9fd6 solid 4px;background:#888888">
-      <ul class="nav navbar-nav pull-right">
-        <li style="font-family:TrueLies;font-size:2em;" class=" navigation-champ"><a style="color:#000;font-weight:bold" href="index.php">Home</a></li>
-        <li style="font-family:TrueLies;font-size:2em;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="mixtapes.php">Mixtapes</a></li>
-        <li style="font-family:TrueLies;font-size:2em;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="pictures.php">Pictures</a></li>
-        <li style="font-family:TrueLies;font-size:2em;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="videos.php">Videos</a></li>
-        <li style="font-family:TrueLies;font-size:2em;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="shop.php">Shop</a></li>
-      </ul>
-    </nav>
+</div>
+
+<div class="row hidden-lg hidden-md">
+  <div class="col-md-10 col-md-offset-1" style="border:#4682B4 solid 4px;border-top:none;border-radius:0px 0px 5px 5px;padding-bottom:10px;padding-top:10px;">
+    <div>
+      <div class="col-md-2">
+        <img src="images/logo2.jpg" style="border-radius:10px;">
+      </div>
+      <div class="col-md-9 col-md-offset-1">
+        <h1 style="font-family:TrueLies;font-size:9em;color:#888888;">TEAM GONE FLY</h1>
+      </div>
+    </div>
+    <div class="col-md-10 col-md-offset-2" style="margin-top:10px;">
+      <nav class="navbar navbar-default" style="border:#2a9fd6 solid 4px;background:#888888">
+        <ul class="nav navbar-nav">
+          <li style="font-family:TrueLies;font-size:2em;text-align:center;" class=" navigation-champ"><a style="color:#000;font-weight:bold;" href="index.php">Home</a></li>
+          <li style="font-family:TrueLies;font-size:2em;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold;" href="mixtapes.php">Mixtapes</a></li>
+          <li style="font-family:TrueLies;font-size:2em;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold;" href="pictures.php">Pictures</a></li>
+          <li style="font-family:TrueLies;font-size:2em;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold;" href="videos.php">Videos</a></li>
+          <li style="font-family:TrueLies;font-size:2em;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold;" href="shop.php">Shop</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </div>
