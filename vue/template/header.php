@@ -5,7 +5,7 @@
         <img src="images/logo2.jpg" style="border-radius:10px;">
       </div>
       <div class="col-md-9 col-md-offset-1">
-        <h1 style="font-family:TrueLies;font-size:9em;color:rgba(136,136,136,1);">TEAM GONE FLY</h1>
+        <h1 style="font-family:TrueLies;font-size:9em;color:rgba(136,136,136,0.9);">TEAM GONE FLY</h1>
       </div>
     </div>
     <div class="col-md-10 col-md-offset-2" style="margin-top:10px;">

@@ -31,8 +31,8 @@ font-family: 'ROUGD' !important;
 }
 
 body{
-  background-image:url('../images/daddyo00.jpg'),url('../images/backgroun2.jpg');
-  background-position:25% 10px,0px 0px;
+  background-image:url('../images/daddyo00.jpg'),url('../images/fumee0000.jpg'),url('../images/fumeeinverse0000.jpg');
+  background-position:25% 10px,0% 100%,100% 100%;
   background-repeat:no-repeat;
 
 }
