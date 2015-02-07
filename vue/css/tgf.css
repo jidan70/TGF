@@ -31,18 +31,57 @@ font-family: 'ROUGD' !important;
 }
 
 body{
-  background-image:url('../images/daddyo0.jpg'),url('../images/fumee0000.jpg'),url('../images/fumeeinverse0000.jpg');
-  background-position:25% 10px,0% 100%,100% 100%;
+  background-image:url('../images/fumee0000.jpg'),url('../images/fumeeinverse0000.jpg');
+  background-position:0% 100%,100% 100%;
   background-repeat:no-repeat;
 
 }
 
+#team-gone-fly{
+  font-family:TrueLies;
+  font-size:7em;
+  color:rgba(136,136,136,0.9);
+}
+
 .menu-nav{
-  background-image:url('../images/menu0000.jpg');
-  background-position:50% 80px;
+  background-image:url('../images/menu0000.png');
+  background-position:50% 100%;
+  background-size:auto;
   background-repeat:no-repeat;
 }
 
 img{
   width:100%;
+}
+
+@media screen and (min-width:1593px)
+{
+  .menu-nav{
+    background-image:url('../images/menu0000.png'),url('../images/logo2.jpg');
+    background-position:25% 100%,85% 10%;
+    background-size:auto,150px;
+    background-repeat:no-repeat;
+  }
+
+  #team-gone-fly{
+    font-family:TrueLies;
+    font-size:9em;
+    color:rgba(136,136,136,0.9);
+  }
+
+}
+
+
+@media screen and (max-width:1000px)
+{
+  #team-gone-fly{
+    font-family:TrueLies;
+    font-size:6em;
+    color:rgba(136,136,136,0.9);
+  }
+
+  #header{
+    padding-top:50px;
+  }
+
 }
