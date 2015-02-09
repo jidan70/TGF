@@ -27,21 +27,29 @@ include_once('../modele/connexion_bdd.php');
 
     <div class="chat col-md-10 col-md-offset-1" style="margin-top:50px;">
 
-      <fieldset class="col-md-4 col-md-offset-4" style="border:#2a9fd6 solid 4px;background:rgba(136,136,136,0.7)">
+      <fieldset class="col-md-4 col-md-offset-4" style="border:#2a9fd6 solid 3px;border-radius:4px;background:rgba(136,136,136,0.9);padding:10px;">
         <form action="../controleur/envoi_message.php" method="post">
-          <p class="text-center"><label for="message">Your message</label><textarea class="form-control" name="message" id="message" placeholder="enter your message here"></textarea><p>
-          <input type="submit" value="send">
+          <p class="text-center"><textarea class="form-control" name="message" id="message" placeholder="enter your message here"></textarea><p>
+          <input type="submit" class="btn btn-primary pull-right" value="send">
         </form>
       </fieldset>
 
-      <div id="chat-section" class="chat-section">
+    </div>
+
+      <div id="chat-section" class="chat-section col-md-10 col-md-offset-1" style="border:#2a9fd6 solid 2px;border-radius:4px;background:rgba(136,136,136,0.2); margin-top:40px;">
+        <h1 class="text-center font-global">Chiraq</h1>
+        <hr style="margin-bottom:30px;"/>
         <?php
         $messages = $tgf_base->query('SELECT message from chat ORDER BY date_creation DESC');
 
         while($message = $messages->fetch())
         {
         ?>
-        <p style="margin-top:10px;"><?php echo $message['message']; ?></p>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-1" style="margin-top:20px;border:solid 1px;border-radius:5px;background:#fff;">
+            <p style="margin-top:10px;color:#000;"><?php echo nl2br(htmlspecialchars($message['message'])); ?></p>
+          </div>
+        </div>
         <?php
         }
 
@@ -50,7 +58,7 @@ include_once('../modele/connexion_bdd.php');
 
       </div>
 
-    </div>
+      <?php include('template/footer.php') ?>
 
   </div>
 

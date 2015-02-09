@@ -49,6 +49,8 @@
       </div>
     </div>
 
+    <?php include('template/footer.php') ?>
+
   </div>
 
 <?php include('template/script.php') ?>

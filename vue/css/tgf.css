@@ -32,8 +32,9 @@ font-family: 'ROUGD' !important;
 
 body{
   background-image:url('../images/fumee0000.jpg'),url('../images/fumeeinverse0000.jpg');
-  background-position:0% 100%,100% 100%;
+  background-position:-25% 0%,125% 0%;
   background-repeat:no-repeat;
+  padding-bottom:850px;
 
 }
 
@@ -43,11 +44,23 @@ body{
   color:rgba(136,136,136,0.9);
 }
 
+.font-global{
+  font-family:TrueLies;
+  color:black;
+}
+
 .menu-nav{
   background-image:url('../images/menu0000.png');
   background-position:50% 100%;
   background-size:auto;
   background-repeat:no-repeat;
+}
+
+.chat{
+  position:fixed;
+  z-index:4;
+  left:25%;
+  bottom:35%;
 }
 
 img{

@@ -38,9 +38,13 @@
     <div class="col-md-1 col-xs-1" style="margin-top:10px;">
       <p><a href="#" target="_blank"><i class="fa fa-instagram fa-5x icon-soc"></i></a></p>
       <p><a href="#" target="_blank"><i class="fa fa-youtube-square fa-5x icon-soc"></i></a></p>
+      <p><a href="#" target="_blank"><i class="fa fa-facebook-official fa-5x icon-soc"></i></a></p>
+      <p><a href="#" target="_blank"><i class="fa fa-twitter-square fa-5x icon-soc"></i></a></p>
 
     </div>
   <div>
+
+    <?php include('template/footer.php') ?>
 
   </div>
 

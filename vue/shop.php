@@ -18,6 +18,11 @@
 
     <?php include('template/header.php') ?>
 
+    <div style="margin-top:50px;">
+      <h1 class="font-global text-center" style="color:#fff">Coming Soon</h1>
+    </div>
+
+    <?php include('template/footer.php') ?>
 
   </div>
 
