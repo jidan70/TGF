@@ -1,5 +1,5 @@
 <div id="tableau-smiley" class="row">
-<h1 class="font-global" style="color:#000;">Click on the smiley</h1>
+<h1 class="font-global text-center" style="color:#000;">Click on the smiley</h1>
 <hr/>
   <div class="row">
 <div class="col-md-1">

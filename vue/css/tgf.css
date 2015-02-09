@@ -56,7 +56,15 @@ body{
 }
 #tableau-smiley img:hover{
   border:rgba(6,6,6,0.5) 1px solid;
+  border-radius:5px;
 }
+
+#tableau-smiley img:active{
+  border:rgba(6,6,6,0.5) 1px solid;
+  border-radius:10px;
+  background:black;
+}
+
 
 #ar-fenetre-modale{
   display:none;
