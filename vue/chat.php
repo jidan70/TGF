@@ -34,7 +34,7 @@ include_once('../modele/connexion_bdd.php');
         </form>
       </fieldset>
 
-      <div class="chat-section">
+      <div id="chat-section" class="chat-section">
         <?php
         $messages = $tgf_base->query('SELECT message from chat ORDER BY date_creation DESC');
 
@@ -55,6 +55,7 @@ include_once('../modele/connexion_bdd.php');
   </div>
 
   <?php include('template/script.php') ?>
+
 
 </body>
 </html>
