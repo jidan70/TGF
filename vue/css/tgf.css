@@ -38,6 +38,35 @@ body{
 
 }
 
+#tableau-smiley{
+  display:none;
+  position:absolute;
+  top:50%;
+  z-index:10;
+  left:33%;
+  background:#fff;
+  border:black 1px solid;
+  border-radius:5px;
+  padding:15px;
+  padding-bottom:40px;
+
+}
+#tableau-smiley img{
+  width:100%;
+}
+#tableau-smiley img:hover{
+  border:rgba(6,6,6,0.5) 1px solid;
+}
+
+#ar-fenetre-modale{
+  display:none;
+  position:fixed;
+  width:2000px;
+  height:2000px;
+  z-index:9;
+  background:rgba(0,0,0,0.5);
+}
+
 #team-gone-fly{
   font-family:TrueLies;
   font-size:7em;
@@ -46,7 +75,6 @@ body{
 
 .font-global{
   font-family:TrueLies;
-  color:black;
 }
 
 .menu-nav{
@@ -60,7 +88,7 @@ body{
   position:fixed;
   z-index:4;
   left:25%;
-  bottom:35%;
+  top:430px;;
 }
 
 img{
