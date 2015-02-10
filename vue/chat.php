@@ -21,7 +21,7 @@ include_once('../modele/connexion_bdd.php');
 <body>
   <?php include('template/smiley.php') ?>
   <div id="ar-fenetre-modale"></div>
-
+s
 
   <div>
 
@@ -39,8 +39,8 @@ include_once('../modele/connexion_bdd.php');
           {
           ?>
           <div class="row">
-            <div class="col-md-10 col-md-offset-0" style="margin-top:20px;margin-left:10px;margin-right:10px;border:solid 1px;border-radius:5px;background:#fff;">
-              <p style="margin-top:10px;color:#000;"><?php echo nl2br(htmlspecialchars($message['message'])); ?></p>
+            <div class="col-md-10 col-md-offset-0" style="margin-top:20px;margin-left:10px;margin-right:10px;border:solid 1px;border-radius:5px;background:#fff;padding:10px;">
+              <p style="margin-top:10px;color:#000;"><?php echo $message['message']; ?></p>
             </div>
           </div>
           <?php
