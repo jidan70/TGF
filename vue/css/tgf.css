@@ -38,6 +38,34 @@ body{
 
 }
 
+#login-window{
+  display:none;
+  position:absolute;
+  top:100px;
+  left:25%;
+  background:rgba(240, 240, 245, 0.9);
+  z-index:31;
+  width:50%;
+  padding-bottom:20px;
+}
+
+#arriere-login{
+  display:none;
+  position:fixed;
+  top:0px;
+  width:2500px;
+  height:2500px;
+  z-index:30;
+  background:rgba(0,0,0,0.5);
+}
+
+.text-form{
+  color:rgb(6,6,6);
+  font-family:'TrueLies';
+  font-size: 1.5em;
+
+}
+
 #tableau-smiley{
   display:none;
   position:absolute;

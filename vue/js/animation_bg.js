@@ -5,7 +5,7 @@ var position_left = 0;
 
 
 setInterval(function(){
-  menu_nav.style.backgroundPosition = position_left + "px 100%";
+  menu_nav.style.backgroundPosition = position_left + "px 100%, 85% 10%";
   if(position_left > 1000){
     position_left = 0;
   }
