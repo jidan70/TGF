@@ -1,0 +1,35 @@
+<?php
+  include_once('../modele/connexion_bdd.php');
+  session_start();
+
+  if(isset($_POST['pseudo_new']) && isset($_POST['mail']) && isset($_POST['new_pass']) && isset($_POST['pass_verif']) )
+  {
+    if($_POST['new_pass'] == $_POST['pass_verif'])
+    {
+    $name = htmlspecialchars($_POST['pseudo_new']);
+    $mail = htmlspecialchars($_POST['mail']);
+    $pass = sha1($_POST['new_pass']);
+    $integration_donnee = $tgf_base->prepare('INSERT INTO membres(pseudo, password, mail, date_signup)VALUES(:pseudo, :pass, :mail, NOW())');
+    $integration_donnee->execute(array(
+      'pseudo' => $name,
+      'pass' => $pass,
+      'mail' => $mail
+    ));
+    $integration_donnee->closeCursor();
+
+    //connexion directly
+    $selection_id = $tgf_base->prepare('SELECT id from membres WHERE mail = :mail AND pseudo = :pseudo');
+    $selection_id->execute(array(
+      'mail' => $mail,
+      'pseudo' => $name
+    ));
+    $id_selected = $selection_id->fetch();
+
+    $_SESSION['pseudo'] = $name;
+    $_SESSION['id_log'] = $id_selected['id'];
+
+    $selection_id->closeCursor();
+    header('Location: ../vue/index.php');
+
+    }
+  }

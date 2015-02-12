@@ -14,7 +14,20 @@
           <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="videos.php"><i class="fa fa-video-camera"></i> Videos </a></li>
           <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="chat.php"><i class="fa fa-comment-o"></i> Chiraq-Chat </a></li>
           <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="shop.php"><i class="fa fa-shopping-cart"></i> Shop </a></li>
+<?php
+if (isset($_SESSION['pseudo']) && isset($_SESSION['id_log']))
+{
+?>
+          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="../controleur/logout.php"><i class="fa fa-user"></i>Log out </a></li>
+<?php
+}
+else
+{
+?>
           <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" id="login" href="#.php"><i class="fa fa-user"></i>Log in </a></li>
+<?php
+}
+?>
         </ul>
       </nav>
     </div>
@@ -36,14 +49,22 @@
         </form>
       </fieldset>
       <fieldset>
-        <h1 style="color:rgb(6,6,6)" class="font-global text-center">Sign in</h1>
+        <h1 style="color:rgb(6,6,6)" class="font-global text-center">Sign up</h1>
         <hr/>
-        <form action="../controleur/signin.php" method="post">
-          <p class="text-form"><label for="pseudo_new">Name</label><input type="text" name="pseudo_new" id="pseudo_new" class="form-control"/></p>
-          <p class="text-form"><label for="mail">Email</label><input type="mail" name="mail" id="mail" class="form-control"/></p>
-          <p class="text-form"><label for="new_pass">Password</label><input type="password" name="new_pass" id="new_pass" class="form-control"/></p>
-          <p class="text-form"><label for="pass_verif">Password Verification</label><input type="password" name="pass_verif" id="pass_verif" class="form-control"/></p>
-          <input type="submit" class="btn btn-default" value="Sign in"/>
+        <form action="../controleur/signup.php" method="post">
+          <p class="text-form"><label for="pseudo_new">Name </label><span id="verif_pseudo"> </span>
+            <input type="text" name="pseudo_new" id="pseudo_new" class="form-control"/>
+          </p>
+          <p class="text-form"><label for="mail">Email</label>
+            <input type="mail" name="mail" id="mail" class="form-control"/><span id="verif_mail"> </span>
+          </p>
+          <p class="text-form"><label for="new_pass">Password</label>
+            <input type="password" name="new_pass" id="new_pass" class="form-control"/><span id="verif_pass"> </span>
+          </p>
+          <p class="text-form"><label for="pass_verif">Password Verification</label>
+            <input type="password" name="pass_verif" id="pass_verif" class="form-control"/><span id="verif_pass2"> </span>
+          </p>
+          <input type="submit" class="btn btn-default" value="Sign up"/>
         </form>
       </fieldset>
     </div>
@@ -65,7 +86,21 @@
           <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="videos.php"><i class="fa fa-video-camera"></i> Videos </a></li>
           <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="chat.php"><i class="fa fa-comment-o"></i> Chiraq-Chat </a></li>
           <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="shop.php"><i class="fa fa-shopping-cart"></i> Shop </a></li>
-          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="shop.php"><i class="fa fa fa-user"></i> Log in </a></li>
+<?php
+if (isset($_SESSION['pseudo']) && isset($_SESSION['id_log']))
+{
+?>
+          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="../controleur/logout.php"><i class="fa fa fa-user"></i> Log out </a></li>
+<?php
+}
+else
+{
+?>
+          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" id="login2" href="#.php"><i class="fa fa fa-user"></i> Log in </a></li>
+<?php
+}
+?>
+
         </ul>
       </nav>
     </div>
