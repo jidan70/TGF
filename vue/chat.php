@@ -7,10 +7,10 @@ include_once('../modele/connexion_bdd.php');
   <meta charset="utf-8">
   <!--  <meta http-equiv="Refresh" content="1" URL="http://localhost/TGF/vue/chat.php"> -->
   <title>Team Gone Fly</title>
-  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap_cyborg.min.css">
-  <link rel="stylesheet" href="css/tgf.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap_cyborg.min.css">
+    <link rel="stylesheet" href="css/tgf.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <style>
   .icon-soc{
     color:#4682b4;
@@ -21,7 +21,7 @@ include_once('../modele/connexion_bdd.php');
 <body>
   <?php include('template/smiley.php') ?>
   <div id="ar-fenetre-modale"></div>
-s
+
 
   <div>
 
@@ -32,29 +32,16 @@ s
           <h1 class="text-center font-global">Chiraq</h1>
           <hr style="margin-bottom:30px;"/>
         <div class="col-md-5 col-md-offset-1" style="height:700px;overflow:scroll;border:#2a9fd6 solid 1px;border-radius:5px;">
-          <?php
-          $messages = $tgf_base->query('SELECT message from chat ORDER BY date_creation DESC');
+          <div id="message">
 
-          while($message = $messages->fetch())
-          {
-          ?>
-          <div class="row">
-            <div class="col-md-10 col-md-offset-0" style="margin-top:20px;margin-left:10px;margin-right:10px;border:solid 1px;border-radius:5px;background:#fff;padding:10px;">
-              <p style="margin-top:10px;color:#000;"><?php echo $message['message']; ?></p>
-            </div>
           </div>
-          <?php
-          }
-
-          $messages->closeCursor();
-          ?>
         </div>
 
         <fieldset class="col-md-4 col-md-offset-1" style="border:#2a9fd6 solid 3px;border-radius:4px;background:rgba(136,136,136,0.9);padding:10px;">
           <form id="form-chat" action="../controleur/envoi_message.php" method="post">
-            <p class="text-center"><textarea class="form-control" id="enter_champ" name="message" id="message" placeholder="enter your message here"></textarea><p>
-            <button id="smiley" class="btn btn-default">SMILEY</button>
-            <input type="submit" class="btn btn-primary pull-right" value="send">
+            <p class="text-center"><textarea class="form-control" id="enter_champ" name="message" placeholder="enter your message here"></textarea><p>
+            <a id="smiley"><i style="margin-left:10px;cursor:pointer;color:rgb(6,6,6);" class="fa fa-smile-o fa-2x"></i></a>
+            <input id="send" type="submit" class="btn btn-default pull-right" value="send">
           </form>
         </fieldset>
       </div>
@@ -64,6 +51,7 @@ s
   </div>
 
   <?php include('template/script.php') ?>
+  <script src="js/message.js"></script>
   <script>
 
   var bouton_smiley = document.getElementById('smiley');

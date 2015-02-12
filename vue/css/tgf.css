@@ -81,6 +81,10 @@ body{
   color:rgba(136,136,136,0.9);
 }
 
+.navigation-champ{
+  font-size:1.5em;
+}
+
 .font-global{
   font-family:TrueLies;
 }
@@ -112,6 +116,11 @@ img{
     background-repeat:no-repeat;
   }
 
+  .navigation-champ{
+    font-size:2em;
+  }
+
+
   #team-gone-fly{
     font-family:TrueLies;
     font-size:9em;
@@ -127,6 +136,10 @@ img{
     font-family:TrueLies;
     font-size:6em;
     color:rgba(136,136,136,0.9);
+  }
+
+  .navigation-champ{
+    font-size:1.4em;
   }
 
   #header{

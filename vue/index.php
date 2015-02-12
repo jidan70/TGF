@@ -22,7 +22,7 @@
     <?php include('template/header.php') ?>
 
     <div style="margin-top:20px;">
-      <div class="row col-md-offset-2">
+      <div class="row col-md-offset-2 col-xs-offset-3">
         <div class="g-ytsubscribe" data-channel="teamgeniusfilms" data-layout="full" data-count="hidden"></div>
       </div>
 
@@ -35,13 +35,20 @@
       </div>
 
 
-    <div class="col-md-1 col-xs-1" style="margin-top:10px;">
+    <div class="hidden-xs hidden-sm col-md-1 col-xs-1" style="margin-top:10px;">
       <p><a href="#" target="_blank"><i class="fa fa-instagram fa-5x icon-soc"></i></a></p>
       <p><a href="#" target="_blank"><i class="fa fa-youtube-square fa-5x icon-soc"></i></a></p>
       <p><a href="#" target="_blank"><i class="fa fa-facebook-official fa-5x icon-soc"></i></a></p>
       <p><a href="#" target="_blank"><i class="fa fa-twitter-square fa-5x icon-soc"></i></a></p>
-
     </div>
+    <div class="hidden-md hidden-lg col-md-1 col-xs-1" style="margin-top:10px;">
+      <p><a href="#" target="_blank"><i class="fa fa-instagram fa-3x icon-soc"></i></a></p>
+      <p><a href="#" target="_blank"><i class="fa fa-youtube-square fa-3x icon-soc"></i></a></p>
+      <p><a href="#" target="_blank"><i class="fa fa-facebook-official fa-3x icon-soc"></i></a></p>
+      <p><a href="#" target="_blank"><i class="fa fa-twitter-square fa-3x icon-soc"></i></a></p>
+    </div>
+  </div>
+
   <div>
 
     <?php include('template/footer.php') ?>
