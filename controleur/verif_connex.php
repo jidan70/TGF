@@ -14,18 +14,15 @@
     $log = $search_log->fetch();
     if(!empty($log))
     {
-      $_SESSION['pseudo'] = $log['pseudo'];
-      $_SESSION['id_log'] = $log['id'];
-      $search_log->closeCursor();
-      header('Location: ../vue/index.php');
+      echo 'vrai';
     }
     else
     {
       $search_log->closeCursor();
-      header('Location: ../vue/index.php');
+      echo 'false';
     }
   }
   else
   {
-    header('Location: ../vue/index.php');
+      echo 'nothing';
   }

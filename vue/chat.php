@@ -51,7 +51,7 @@ include_once('../modele/connexion_bdd.php');
             {
 
             ?>
-            <p class="text-center"><textarea class="form-control" id="enter_champ" name="message" disabled placeholder="enter your message here"></textarea><p>
+            <p class="text-center"><textarea class="form-control" id="enter_champ"  name="message" disabled placeholder="enter your message here"></textarea><p>
             <?php
             }
             ?>

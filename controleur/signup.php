@@ -4,7 +4,7 @@
 
   if(isset($_POST['pseudo_new']) && isset($_POST['mail']) && isset($_POST['new_pass']) && isset($_POST['pass_verif']) )
   {
-    if($_POST['new_pass'] == $_POST['pass_verif'])
+    if($_POST['new_pass'] == $_POST['pass_verif'] && preg_match('#^[A-Za-z\d_-]{7,}$#i', $_POST['pseudo_new']) && preg_match('#^[A-Za-z0-9\._-]+@[A-Za-z0-9\._-]+\.[A-Za-z]{2,6}$#i', $_POST['mail']))
     {
     $name = htmlspecialchars($_POST['pseudo_new']);
     $mail = htmlspecialchars($_POST['mail']);

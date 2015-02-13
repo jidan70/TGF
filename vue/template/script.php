@@ -94,5 +94,46 @@ var a, b, c, d;
   }, false);
 
 })();
+(function() {
+  var bouton_log_form = document.getElementById('bouton-log-form');
+  var form_connexion = document.getElementById('form-connexion');
+  var verif_login = document.getElementById('verif-login');
+
+  function verif_pseudo(){
+    var pseudo = document.getElementById('pseudo').value;
+    var pass = document.getElementById('pass').value;
+    var xhr3 = new XMLHttpRequest();
+    xhr3.open('POST', 'http://192.168.1.55/TGF/controleur/verif_connex.php' )
+
+    xhr3.onreadystatechange = function() {
+      if (xhr3.readyState == 4 && xhr3.status == 200){
+        var pseudo_existe = xhr3.responseText;
+        if (/^false/i.test(pseudo_existe)){
+          verif_login.innerHTML = "";
+          var info_log = document.createTextNode('your password or your pseudo are incorects');
+          verif_login.appendChild(info_log);
+        }
+        else if(/^nothing/i.test(pseudo_existe)){
+        }
+        else if (/^vrai/i.test(pseudo_existe)){
+          verif_login.innerHTML = "";
+          verif_login.style.color = "green";
+          var info_log = document.createTextNode('your password and your pseudo are corects');
+          verif_login.appendChild(info_log);
+          form_connexion.submit();
+        }
+      }
+    };
+    xhr3.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr3.send('pseudo=' + pseudo + '&pass=' + pass);
+  }
+
+  bouton_log_form.addEventListener('click', function(e){
+    e.preventDefault();
+    verif_pseudo();
+  }, false);
+
+})();
+
 
 </script>

@@ -39,16 +39,16 @@ session_start();
 
 
     <div class="hidden-xs hidden-sm col-md-1 col-xs-1" style="margin-top:10px;">
-      <p><a href="#" target="_blank"><i class="fa fa-instagram fa-5x icon-soc"></i></a></p>
-      <p><a href="#" target="_blank"><i class="fa fa-youtube-square fa-5x icon-soc"></i></a></p>
-      <p><a href="#" target="_blank"><i class="fa fa-facebook-official fa-5x icon-soc"></i></a></p>
-      <p><a href="#" target="_blank"><i class="fa fa-twitter-square fa-5x icon-soc"></i></a></p>
+      <p><a href="http://instagram.com/daddyo_tgf_ceo/" target="_blank"><i class="fa fa-instagram fa-5x icon-soc"></i></a></p>
+      <p><a href="https://www.youtube.com/channel/UCz9_dH1ROZOPpbylOeGcJeg" target="_blank"><i class="fa fa-youtube-square fa-5x icon-soc"></i></a></p>
+      <p><a href="https://www.facebook.com/daddyo62ent" target="_blank"><i class="fa fa-facebook-official fa-5x icon-soc"></i></a></p>
+      <p><a href="https://twitter.com/thereal_daddyo" target="_blank"><i class="fa fa-twitter-square fa-5x icon-soc"></i></a></p>
     </div>
     <div class="hidden-md hidden-lg col-md-1 col-xs-1" style="margin-top:10px;">
-      <p><a href="#" target="_blank"><i class="fa fa-instagram fa-3x icon-soc"></i></a></p>
-      <p><a href="#" target="_blank"><i class="fa fa-youtube-square fa-3x icon-soc"></i></a></p>
-      <p><a href="#" target="_blank"><i class="fa fa-facebook-official fa-3x icon-soc"></i></a></p>
-      <p><a href="#" target="_blank"><i class="fa fa-twitter-square fa-3x icon-soc"></i></a></p>
+      <p><a href="http://instagram.com/daddyo_tgf_ceo/" target="_blank"><i class="fa fa-instagram fa-3x icon-soc"></i></a></p>
+      <p><a href="https://www.youtube.com/channel/UCz9_dH1ROZOPpbylOeGcJeg" target="_blank"><i class="fa fa-youtube-square fa-3x icon-soc"></i></a></p>
+      <p><a href="https://www.facebook.com/daddyo62ent" target="_blank"><i class="fa fa-facebook-official fa-3x icon-soc"></i></a></p>
+      <p><a href="https://twitter.com/thereal_daddyo" target="_blank"><i class="fa fa-twitter-square fa-3x icon-soc"></i></a></p>
     </div>
   </div>
 

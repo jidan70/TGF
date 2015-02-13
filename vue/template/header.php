@@ -18,13 +18,13 @@
 if (isset($_SESSION['pseudo']) && isset($_SESSION['id_log']))
 {
 ?>
-          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="../controleur/logout.php"><i class="fa fa-user"></i>Log out </a></li>
+          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="../controleur/logout.php"><i class="fa fa-user-times"></i> Log out </a></li>
 <?php
 }
 else
 {
 ?>
-          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" id="login" href="#.php"><i class="fa fa-user"></i>Log in </a></li>
+          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" id="login" href="#.php"><i class="fa fa-user"></i> Log in </a></li>
 <?php
 }
 ?>
@@ -42,10 +42,12 @@ else
       <fieldset>
         <h1 style="color:rgb(6,6,6)" class="font-global text-center">Log in</h1>
         <hr/>
-        <form action="../controleur/connexion.php" method="post">
+        <form action="../controleur/connexion.php" id="form-connexion" method="post">
           <p class="text-form"><label for="pseudo">Name</label><input type="text" name="pseudo" id="pseudo" class="form-control"/></p>
-          <p class="text-form"><label for="pass">Password</label><input type="password" name="pass" id="pass" class="form-control"/></p>
-          <input type="submit" class="btn btn-default" value="Log in"/>
+          <p class="text-form"><label for="pass">Password</label><input type="password" name="pass" id="pass" class="form-control"/>
+          <span class="verif-zone" id="verif-login"> </span>
+          </p>
+          <input id="bouton-log-form" type="submit" class="btn btn-default" value="Log in"/>
         </form>
       </fieldset>
       <fieldset>
@@ -90,13 +92,13 @@ else
 if (isset($_SESSION['pseudo']) && isset($_SESSION['id_log']))
 {
 ?>
-          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="../controleur/logout.php"><i class="fa fa fa-user"></i> Log out </a></li>
+          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="../controleur/logout.php"><i class="fa fa-user-times"></i> Log out </a></li>
 <?php
 }
 else
 {
 ?>
-          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" id="login2" href="#.php"><i class="fa fa fa-user"></i> Log in </a></li>
+          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" id="login2" href="#.php"><i class="fa fa-user"></i> Log in </a></li>
 <?php
 }
 ?>
