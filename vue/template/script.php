@@ -3,6 +3,7 @@
 <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/animation_bg.js"></script>
 <script>
+
 (function() {
   var login_button = document.getElementById('login');
   var login_button2 = document.getElementById('login2');
@@ -26,6 +27,7 @@
 
 })();
 
+
 (function() {
   var verif_pseudo = document.getElementById('verif-pseudo'),
       verif_mail = document.getElementById('verif-mail'),
@@ -36,8 +38,64 @@
       champ_mail = document.getElementById('mail'),
       champ_pass = document.getElementById('new_pass'),
       champ_pass2 = document.getElementById('pass_verif');
+  var a = false, b = false, c = false, d = false, e = false, f = false;
 
-var a, b, c, d;
+      function searchMail(){
+        var xhr4 = new XMLHttpRequest();
+        var mail = champ_mail.value;
+        xhr4.open('POST', 'http://localhost/TGF/controleur/search_mail.php');
+
+        xhr4.addEventListener('readystatechange', function(){
+          if(xhr4.readyState == 4 && xhr4.status == 200){
+            var file_recept = xhr4.responseText;
+            if(/^exist/i.test(file_recept)){
+              verif_mail.innerHTML = "";
+              verif_mail.style.color = "rgb(100,6,6)";
+              var text_info = document.createTextNode('this adress already exist');
+              verif_mail.appendChild(text_info);
+            }
+            else if(/^not/i.test(file_recept)){
+              verif_mail.innerHTML = "";
+              verif_mail.style.color = "green";
+              var text_info = document.createTextNode('this adress is valid');
+              verif_mail.appendChild(text_info);
+            }
+          }
+        }, false);
+
+        xhr4.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr4.send('mail=' + mail);
+      }
+
+      function searchPseudo(){
+        var xhr5 = new XMLHttpRequest();
+        var pseudo = champ_pseudo.value;
+        xhr5.open('POST', 'http://localhost/TGF/controleur/search_pseudo.php');
+
+        xhr5.addEventListener('readystatechange', function(){
+          if(xhr5.readyState == 4 && xhr5.status == 200){
+            var file_recept = xhr5.responseText;
+            if(/^exist/i.test(file_recept)){
+              verif_pseudo.innerHTML = "";
+              verif_pseudo.style.color = "rgb(100,6,6)";
+              var text_info = document.createTextNode('this pseudo already exist');
+              verif_pseudo.appendChild(text_info);
+            }
+            else if(/^not/i.test(file_recept)){
+              verif_pseudo.innerHTML = "";
+              verif_pseudo.style.color = "green";
+              var text_info = document.createTextNode('this pseudo is valid');
+              verif_pseudo.appendChild(text_info);
+            }
+          }
+        }, false);
+
+        xhr5.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr5.send('pseudo=' + pseudo);
+      }
+
+
+
 
     champ_pseudo.addEventListener('blur', function() {
     if(!/^[A-Za-z\d_-]{7,}$/i.test(champ_pseudo.value)){
@@ -48,6 +106,14 @@ var a, b, c, d;
     }else{
       verif_pseudo.innerHTML = "";
       a = true;
+      searchPseudo();
+      setTimeout(function() {
+        if(/exist/.test(verif_pseudo.innerHTML)){
+          f = false;
+        }else{
+          f = true;
+        }
+      },500);
     }
   },false);
 
@@ -60,12 +126,20 @@ var a, b, c, d;
     }else{
       verif_mail.innerHTML = "";
       b = true;
+      searchMail();
+      setTimeout(function() {
+        if(/exist/.test(verif_mail.innerHTML)){
+          e = false;
+        }else{
+          e = true;
+        }
+      },500);
     }
   },false);
 
   champ_pass.addEventListener('blur', function() {
     if(!/^[A-Za-z0-9_]{8,}$/.test(champ_pass.value)){
-      var info = document.createTextNode('Your password must have more than 7 characters(must be letters, numbers or "_"');
+      var info = document.createTextNode('Your password must have more than 7 characters(must be letters, numbers or "_")');
       verif_pass.innerHTML = "";
       verif_pass.appendChild(info);
       c = false;
@@ -87,13 +161,15 @@ var a, b, c, d;
     }
   },false);
 
-  bouton_signup.addEventListener('click', function(e) {
-    if(a == false || b == false || c == false || d == false){
-      e.preventDefault();
+  bouton_signup.addEventListener('click', function(ele) {
+    if(a == false || b == false || c == false || d == false || e == false || f == false){
+      ele.preventDefault();
     }
   }, false);
 
 })();
+
+
 (function() {
   var bouton_log_form = document.getElementById('bouton-log-form');
   var form_connexion = document.getElementById('form-connexion');
@@ -103,7 +179,7 @@ var a, b, c, d;
     var pseudo = document.getElementById('pseudo').value;
     var pass = document.getElementById('pass').value;
     var xhr3 = new XMLHttpRequest();
-    xhr3.open('POST', 'http://192.168.1.55/TGF/controleur/verif_connex.php' )
+    xhr3.open('POST', 'http://localhost/TGF/controleur/verif_connex.php' )
 
     xhr3.onreadystatechange = function() {
       if (xhr3.readyState == 4 && xhr3.status == 200){

@@ -2,7 +2,7 @@
   <div id="header" class="col-md-12 col-md-offset-0" style="border:#4682B4 solid 4px;border-top:none;border-radius:0px 0px 40px 40px;padding-bottom:10px;padding-top:10px;">
     <div id="titre-div">
       <div  id="titre-div" class="col-md-12 col-md-offset-0">
-        <h1 id="team-gone-fly" style="transform: rotate(-7deg);z-index:30;text-shadow:0 0 3px #000000" class="text-center">TEAM GONE FLY</h1>
+        <h1 id="team-gone-fly" style="transform: rotate(-7deg);z-index:30;text-shadow:0 0 3px #000000" class="text-center col-xs-7 col-md-offset-2">TEAM GONE FLY</h1>
       </div>
     </div>
     <div class="col-md-10 col-md-offset-1" style="margin-top:10px;">

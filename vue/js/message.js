@@ -3,7 +3,7 @@
 
   function messageRequete(){
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://192.168.1.55/TGF/vue/template/message.php');
+    xhr.open('POST', 'http://localhost/TGF/vue/template/message.php');
 
     xhr.onreadystatechange = function() {
       if (xhr.readyState == 4 && xhr.status == 200){
@@ -27,7 +27,7 @@
 
   function sendMessage(){
     var xhr2 = new XMLHttpRequest();
-    xhr2.open('POST','http://192.168.1.55/TGF/controleur/envoi_message.php');
+    xhr2.open('POST','http://localhost/TGF/controleur/envoi_message.php');
     xhr2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     var message = message_champ.value;
     xhr2.send('message=' + message);
