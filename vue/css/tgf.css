@@ -132,8 +132,8 @@ body{
 }
 
 .menu-nav{
-  background-image:url('../images/menu0000.png');
-  background-position:50% 100%;
+  background-image:url('../images/daddyo2.png'), url('../images/treyp2.png'), url('../images/micky2.png');
+  background-position:20% 100%, 40% 100%, 60% 100%;
   background-size:auto;
   background-repeat:no-repeat;
 }
@@ -152,9 +152,9 @@ img{
 @media screen and (min-width:1593px)
 {
   .menu-nav{
-    background-image:url('../images/menu0000.png'),url('../images/logo2.jpg');
-    background-position:25% 100%,85% 10%;
-    background-size:auto,150px;
+    background-image:url('../images/smoke2.png'), url('../images/treyp2.png'), url('../images/daddyo2.png'), url('../images/logo2.jpg');
+    background-position:10% 100%, 30% 100%, 60% 100%,85% 10%;
+    background-size:auto,17%, auto, 150px;
     background-repeat:no-repeat;
   }
 
