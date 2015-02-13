@@ -66,6 +66,14 @@ body{
 
 }
 
+.verif-zone{
+  font-style:italic;
+  font-size:0.7em;
+  color:rgb(100,6,6);
+  font-family:georgia;
+  margin-left:20px;
+}
+
 #tableau-smiley{
   display:none;
   position:absolute;

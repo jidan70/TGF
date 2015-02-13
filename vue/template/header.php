@@ -52,19 +52,19 @@ else
         <h1 style="color:rgb(6,6,6)" class="font-global text-center">Sign up</h1>
         <hr/>
         <form action="../controleur/signup.php" method="post">
-          <p class="text-form"><label for="pseudo_new">Name </label><span id="verif_pseudo"> </span>
-            <input type="text" name="pseudo_new" id="pseudo_new" class="form-control"/>
+          <p class="text-form"><label for="pseudo_new">Name </label>
+            <input type="text" name="pseudo_new" id="pseudo_new" class="form-control"/><span class="verif-zone" id="verif-pseudo"> </span>
           </p>
           <p class="text-form"><label for="mail">Email</label>
-            <input type="mail" name="mail" id="mail" class="form-control"/><span id="verif_mail"> </span>
+            <input type="mail" name="mail" id="mail" class="form-control"/><span class="verif-zone" id="verif-mail"> </span>
           </p>
           <p class="text-form"><label for="new_pass">Password</label>
-            <input type="password" name="new_pass" id="new_pass" class="form-control"/><span id="verif_pass"> </span>
+            <input type="password" name="new_pass" id="new_pass" class="form-control"/><span class="verif-zone" id="verif-pass"> </span>
           </p>
           <p class="text-form"><label for="pass_verif">Password Verification</label>
-            <input type="password" name="pass_verif" id="pass_verif" class="form-control"/><span id="verif_pass2"> </span>
+            <input type="password" name="pass_verif" id="pass_verif" class="form-control"/><span class="verif-zone" id="verif-pass2"> </span>
           </p>
-          <input type="submit" class="btn btn-default" value="Sign up"/>
+          <input type="submit" id="bouton-signup" class="btn btn-default" value="Sign up"/>
         </form>
       </fieldset>
     </div>

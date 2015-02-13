@@ -25,4 +25,74 @@
   }, false);
 
 })();
+
+(function() {
+  var verif_pseudo = document.getElementById('verif-pseudo'),
+      verif_mail = document.getElementById('verif-mail'),
+      verif_pass = document.getElementById('verif-pass'),
+      verif_pass2 = document.getElementById('verif-pass2'),
+      bouton_signup = document.getElementById('bouton-signup'),
+      champ_pseudo = document.getElementById('pseudo_new'),
+      champ_mail = document.getElementById('mail'),
+      champ_pass = document.getElementById('new_pass'),
+      champ_pass2 = document.getElementById('pass_verif');
+
+var a, b, c, d;
+
+    champ_pseudo.addEventListener('blur', function() {
+    if(!/^[A-Za-z\d_-]{7,}$/i.test(champ_pseudo.value)){
+      var info = document.createTextNode('Your pseudo must have more then 6 characters (must be letters, numbers, "_" or "-")');
+      verif_pseudo.innerHTML = "";
+      verif_pseudo.appendChild(info);
+      a = false;
+    }else{
+      verif_pseudo.innerHTML = "";
+      a = true;
+    }
+  },false);
+
+  champ_mail.addEventListener('blur', function() {
+    if(!/^[A-Za-z0-9\._-]+@[A-Za-z0-9\._-]+\.[A-Za-z]{2,6}$/.test(champ_mail.value)){
+      var info = document.createTextNode('Your mail adress is not valid');
+      verif_mail.innerHTML = "";
+      verif_mail.appendChild(info);
+      b = false;
+    }else{
+      verif_mail.innerHTML = "";
+      b = true;
+    }
+  },false);
+
+  champ_pass.addEventListener('blur', function() {
+    if(!/^[A-Za-z0-9_]{8,}$/.test(champ_pass.value)){
+      var info = document.createTextNode('Your password must have more than 7 characters(must be letters, numbers or "_"');
+      verif_pass.innerHTML = "";
+      verif_pass.appendChild(info);
+      c = false;
+    }else{
+      verif_pass.innerHTML = "";
+      c = true;
+    }
+  },false);
+
+  champ_pass2.addEventListener('blur', function() {
+    if(champ_pass.value != champ_pass2.value){
+      var info = document.createTextNode('The 2 passwords are different');
+      verif_pass2.innerHTML = "";
+      verif_pass2.appendChild(info);
+      d = false;
+    }else{
+      verif_pass2.innerHTML = "";
+      d = true;
+    }
+  },false);
+
+  bouton_signup.addEventListener('click', function(e) {
+    if(a == false || b == false || c == false || d == false){
+      e.preventDefault();
+    }
+  }, false);
+
+})();
+
 </script>

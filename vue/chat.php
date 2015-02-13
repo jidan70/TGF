@@ -40,7 +40,21 @@ include_once('../modele/connexion_bdd.php');
 
         <fieldset class="col-md-4 col-md-offset-1" style="border:#2a9fd6 solid 3px;border-radius:4px;background:rgba(136,136,136,0.9);padding:10px;">
           <form id="form-chat" action="../controleur/envoi_message.php" method="post">
+            <?php
+            if(isset($_SESSION['pseudo']))
+            {
+            ?>
             <p class="text-center"><textarea class="form-control" id="enter_champ" name="message" placeholder="enter your message here"></textarea><p>
+            <?php
+            }
+            else
+            {
+
+            ?>
+            <p class="text-center"><textarea class="form-control" id="enter_champ" name="message" disabled placeholder="enter your message here"></textarea><p>
+            <?php
+            }
+            ?>
             <a id="smiley"><i style="margin-left:10px;cursor:pointer;color:rgb(6,6,6);" class="fa fa-smile-o fa-2x"></i></a>
             <input id="send" type="submit" class="btn btn-default pull-right" value="send">
           </form>
