@@ -132,10 +132,10 @@ body{
 }
 
 .menu-nav{
-  background-image:url('../images/daddyo2.png'), url('../images/treyp2.png'), url('../images/micky2.png');
+  background-image:url('../images/smoke3.png'),url('../images/smoke3.png'), url('../images/menu2.png'),url('../images/plane.png'),url('../images/plane1.png');
   background-position:20% 100%, 40% 100%, 60% 100%;
   background-size:auto;
-  background-repeat:no-repeat;
+  background-repeat:repeat, repeat, no-repeat, no-repeat, no-repeat;
 }
 
 .chat{
@@ -152,10 +152,10 @@ img{
 @media screen and (min-width:1593px)
 {
   .menu-nav{
-    background-image:url('../images/smoke2.png'), url('../images/treyp2.png'), url('../images/daddyo2.png'), url('../images/logo2.jpg');
-    background-position:10% 100%, 30% 100%, 60% 100%,85% 10%;
-    background-size:auto,17%, auto, 150px;
-    background-repeat:no-repeat;
+    background-image:url('../images/smoke3.png'),url('../images/smoke3.png'), url('../images/menu2.png'), url('../images/logo2.jpg'),url('../images/plane1.png');
+    background-position:10% 100%, 10% 0%, 25% 100%,85% 10%;
+    background-size:auto, auto, auto, 150px, 300px;
+    background-repeat:repeat, repeat, no-repeat, no-repeat,no-repeat;
   }
 
   .navigation-champ{
