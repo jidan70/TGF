@@ -92,7 +92,7 @@ body{
   padding-bottom:40px;
 
 }
-#tableau-smiley img{
+#tableau-smiley img[src*="png"]{
   width:100%;
 }
 #tableau-smiley img:hover{

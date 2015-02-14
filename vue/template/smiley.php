@@ -38,6 +38,42 @@
 <div class="col-xs-1">
     <img src="smiley1/sad.png" id="sad"/>
 </div>
+</div>
+
+<hr/>
+
+<div class="row">
+<div class="col-xs-1">
+    <img src="emotes/e1.gif" />
+</div>
+<div class="col-xs-1">
+    <img src="emotes/e2.gif" id=""/>
+</div>
+<div class="col-xs-1">
+    <img src="emotes/e3.gif" id=""/>
+</div>
+<div class="col-xs-1">
+    <img src="emotes/e4.gif" id=""/>
+</div>
+<div class="col-xs-1">
+    <img src="emotes/e5.gif" id=""/>
+</div>
+<div class="col-xs-1">
+    <img src="emotes/e6.gif" id=""/>
+</div>
+<div class="col-xs-1">
+    <img src="emotes/e7.gif" id=""/>
+</div>
+<div class="col-xs-1">
+    <img src="emotes/e8.gif" id=""/>
+</div>
+<div class="col-xs-1">
+    <img src="emotes/e9.gif" id=""/>
+</div>
+<div class="col-xs-1">
+    <img src="emotes/e10.gif" id=""/>
+</div>
+
 
 
   </div>

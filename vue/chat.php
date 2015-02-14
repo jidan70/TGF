@@ -73,7 +73,7 @@ include_once('../modele/connexion_bdd.php');
   var tableau_smiley = document.getElementById('tableau-smiley');
   var form_chat = document.getElementById('form-chat');
   var fond_modal = document.getElementById('ar-fenetre-modale');
-  var smileys = document.querySelectorAll('#tableau-smiley img');
+  var smileys = document.querySelectorAll('#tableau-smiley img[src*="png"]');
   var enter_champ = document.getElementById('enter_champ');
   var nbr_sml = smileys.length;
 
@@ -98,7 +98,7 @@ include_once('../modele/connexion_bdd.php');
 
   for(var i = 0; i < nbr_sml; i++){
     smileys[i].addEventListener('click',function(e) {
-      var text_integr = "(" + e.target.id + ")";
+      var text_integr = "[[" + e.target.id + "]]";
       enter_champ.value += text_integr;
     }, false);
   }
