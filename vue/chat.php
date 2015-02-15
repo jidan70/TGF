@@ -8,10 +8,10 @@ include_once('../modele/connexion_bdd.php');
   <meta charset="utf-8">
   <!--  <meta http-equiv="Refresh" content="1" URL="http://localhost/TGF/vue/chat.php"> -->
   <title>Team Gone Fly</title>
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap_cyborg.min.css">
-    <link rel="stylesheet" href="css/tgf.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vue/bootstrap/dist/css/bootstrap_cyborg.min.css">
+    <link rel="stylesheet" href="vue/css/tgf.css">
+    <link rel="stylesheet" href="vue/css/animate.css">
+    <link rel="stylesheet" href="vue/font-awesome/css/font-awesome.min.css">
   <style>
   .icon-soc{
     color:#4682b4;
@@ -39,7 +39,7 @@ include_once('../modele/connexion_bdd.php');
         </div>
 
         <fieldset class="col-md-4 col-md-offset-1" style="border:#2a9fd6 solid 3px;border-radius:4px;background:rgba(136,136,136,0.9);padding:10px;">
-          <form id="form-chat" action="../controleur/envoi_message.php" method="post">
+          <form id="form-chat" action="controleur/envoi_message" method="post">
             <?php
             if(isset($_SESSION['pseudo']))
             {
@@ -66,7 +66,7 @@ include_once('../modele/connexion_bdd.php');
   </div>
 
   <?php include('template/script.php') ?>
-  <script src="js/message.js"></script>
+  <script src="vue/js/message.js"></script>
   <script>
 
   var bouton_smiley = document.getElementById('smiley');

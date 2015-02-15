@@ -1,2 +1,5 @@
 Options +FollowSymlinks
 RewriteEngine On
+RewriteRule	 ^$ vue/index.php [L]
+RewriteRule	 ^controleur/([A-Za-z_]+)$ controleur/$1.php [L]
+RewriteRule	 ^([A-Za-z]+)$ vue/$1.php [L]

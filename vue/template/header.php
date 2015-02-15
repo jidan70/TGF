@@ -8,23 +8,23 @@
     <div class="col-md-10 col-md-offset-1" style="margin-top:10px;">
       <nav class="navbar navbar-default" style="border:#2a9fd6 solid 4px;background:rgba(136,136,136,0.7)">
         <ul class="nav navbar-nav">
-          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="index.php"><i class="fa fa-home"></i> Home </a></li>
-          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="mixtapes.php"><i class="fa fa-download"></i> Mixtapes </a></li>
-          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="pictures.php"><i class="fa fa-camera-retro"></i> Pictures </a></li>
-          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="videos.php"><i class="fa fa-video-camera"></i> Videos </a></li>
-          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="chat.php"><i class="fa fa-comment-o"></i> Chiraq-Chat </a></li>
-          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="shop.php"><i class="fa fa-shopping-cart"></i> Shop </a></li>
+          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="index"><i class="fa fa-home"></i> Home </a></li>
+          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="mixtapes"><i class="fa fa-download"></i> Mixtapes </a></li>
+          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="pictures"><i class="fa fa-camera-retro"></i> Pictures </a></li>
+          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="videos"><i class="fa fa-video-camera"></i> Videos </a></li>
+          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="chat"><i class="fa fa-comment-o"></i> Chiraq-Chat </a></li>
+          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="shop"><i class="fa fa-shopping-cart"></i> Shop </a></li>
 <?php
 if (isset($_SESSION['pseudo']) && isset($_SESSION['id_log']))
 {
 ?>
-          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="../controleur/logout.php"><i class="fa fa-user-times"></i> Log out </a></li>
+          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="controleur/logout"><i class="fa fa-user-times"></i> Log out </a></li>
 <?php
 }
 else
 {
 ?>
-          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" id="login" href="#.php"><i class="fa fa-user"></i> Log in </a></li>
+          <li style="font-family:TrueLies;" class="navigation-champ"><a style="color:#000;font-weight:bold" id="login" href="#"><i class="fa fa-user"></i> Log in </a></li>
 <?php
 }
 ?>
@@ -42,7 +42,7 @@ else
       <fieldset>
         <h1 style="color:rgb(6,6,6)" class="font-global text-center">Log in</h1>
         <hr/>
-        <form action="../controleur/connexion.php" id="form-connexion" method="post">
+        <form action="controleur/connexion" id="form-connexion" method="post">
           <p class="text-form"><label for="pseudo">Name</label><input type="text" name="pseudo" id="pseudo" class="form-control"/></p>
           <p class="text-form"><label for="pass">Password</label><input type="password" name="pass" id="pass" class="form-control"/>
           <span class="verif-zone" id="verif-login"> </span>
@@ -53,7 +53,7 @@ else
       <fieldset>
         <h1 style="color:rgb(6,6,6)" class="font-global text-center">Sign up</h1>
         <hr/>
-        <form action="../controleur/signup.php" method="post">
+        <form action="controleur/signup" method="post">
           <p class="text-form"><label for="pseudo_new">Name </label>
             <input type="text" name="pseudo_new" id="pseudo_new" class="form-control"/><span class="verif-zone" id="verif-pseudo"> </span>
           </p>
@@ -82,23 +82,23 @@ else
     <div class="col-md-10 col-md-offset-2" style="margin-top:10px;">
       <nav class="navbar navbar-default" style="border:#2a9fd6 solid 4px;background:rgba(136,136,136,0.7)">
         <ul class="nav navbar-nav">
-          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="index.php"><i class="fa fa-home"></i> Home </a></li>
-          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="mixtapes.php"><i class="fa fa-download"></i> Mixtapes </a></li>
-          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="pictures.php"><i class="fa fa-camera-retro"></i> Pictures </a></li>
-          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="videos.php"><i class="fa fa-video-camera"></i> Videos </a></li>
-          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="chat.php"><i class="fa fa-comment-o"></i> Chiraq-Chat </a></li>
-          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="shop.php"><i class="fa fa-shopping-cart"></i> Shop </a></li>
+          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="vue/index"><i class="fa fa-home"></i> Home </a></li>
+          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="vue/mixtapes"><i class="fa fa-download"></i> Mixtapes </a></li>
+          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="vue/pictures"><i class="fa fa-camera-retro"></i> Pictures </a></li>
+          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="vue/videos"><i class="fa fa-video-camera"></i> Videos </a></li>
+          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="vue/chat"><i class="fa fa-comment-o"></i> Chiraq-Chat </a></li>
+          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="vue/shop"><i class="fa fa-shopping-cart"></i> Shop </a></li>
 <?php
 if (isset($_SESSION['pseudo']) && isset($_SESSION['id_log']))
 {
 ?>
-          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="../controleur/logout.php"><i class="fa fa-user-times"></i> Log out </a></li>
+          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" href="controleur/logout"><i class="fa fa-user-times"></i> Log out </a></li>
 <?php
 }
 else
 {
 ?>
-          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" id="login2" href="#.php"><i class="fa fa-user"></i> Log in </a></li>
+          <li style="font-family:TrueLies;text-align:center;" class="navigation-champ"><a style="color:#000;font-weight:bold" id="login2" href="#"><i class="fa fa-user"></i> Log in </a></li>
 <?php
 }
 ?>

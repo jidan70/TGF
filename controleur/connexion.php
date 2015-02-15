@@ -17,15 +17,15 @@
       $_SESSION['pseudo'] = $log['pseudo'];
       $_SESSION['id_log'] = $log['id'];
       $search_log->closeCursor();
-      header('Location: ../vue/index.php');
+      header('Location: ../index');
     }
     else
     {
       $search_log->closeCursor();
-      header('Location: ../vue/index.php');
+      header('Location: ../index');
     }
   }
   else
   {
-    header('Location: ../vue/index.php');
+    header('Location: ../index');
   }

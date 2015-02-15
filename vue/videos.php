@@ -7,10 +7,10 @@ include('../modele/connexion_bdd.php')
 <head>
   <meta charset="utf-8">
   <title>Team Gone Fly</title>
-  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap_cyborg.min.css">
-  <link rel="stylesheet" href="css/tgf.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="vue/bootstrap/dist/css/bootstrap_cyborg.min.css">
+  <link rel="stylesheet" href="vue/css/tgf.css">
+  <link rel="stylesheet" href="vue/css/animate.css">
+  <link rel="stylesheet" href="vue/font-awesome/css/font-awesome.min.css">
 
 
   <style>
@@ -23,7 +23,7 @@ include('../modele/connexion_bdd.php')
     <?php include('template/header.php') ?>
 
     <div class="col-md-10 col-md-offset-1" style="border-radius:5px;margin-top:80px;padding-top:15px;">
-      <form class="col-md-4 col-md-offset-4" action="../controleur/add_video.php" method="post">
+      <form class="col-md-4 col-md-offset-4" action="controleur/add_video" method="post">
         <p><input class="form-control" type="text" name="v_id" placeholder="enter the v_id (www.youtube.com/watch?v='THIS')"/></p>
         <p><input class="form-control" type="text" name="title" placeholder="enter the title"/></p>
         <p><input class="btn btn-primary" type="submit" value="add the video" /></p>

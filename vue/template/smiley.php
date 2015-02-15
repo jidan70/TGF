@@ -3,40 +3,40 @@
 <hr/>
   <div class="row">
 <div class="col-xs-1">
-    <img src="smiley1/angel.png" id="angel"/>
+    <img src="vue/smiley1/angel.png" id="angel"/>
 </div>
 <div class="col-xs-1">
-    <img src="smiley1/awww.png" id="awww"/>
+    <img src="vue/smiley1/awww.png" id="awww"/>
 </div>
 <div class="col-xs-1">
-    <img src="smiley1/disheartened.png" id="disheartened"/>
+    <img src="vue/smiley1/disheartened.png" id="disheartened"/>
 </div>
 <div class="col-xs-1">
-    <img src="smiley1/ecstatic.png" id="ecstatic"/>
+    <img src="vue/smiley1/ecstatic.png" id="ecstatic"/>
 </div>
 <div class="col-xs-1">
-    <img src="smiley1/great.png" id="great"/>
+    <img src="vue/smiley1/great.png" id="great"/>
 </div>
 <div class="col-xs-1">
-    <img src="smiley1/i-think.png" id="i-think"/>
+    <img src="vue/smiley1/i-think.png" id="i-think"/>
 </div>
 <div class="col-xs-1">
-    <img src="smiley1/just-like-that.png" id="just-like-that"/>
+    <img src="vue/smiley1/just-like-that.png" id="just-like-that"/>
 </div>
 <div class="col-xs-1">
-    <img src="smiley1/kill-u.png" id="kill-u"/>
+    <img src="vue/smiley1/kill-u.png" id="kill-u"/>
 </div>
 <div class="col-xs-1">
-    <img src="smiley1/mouthshut.png" id="mouthshut"/>
+    <img src="vue/smiley1/mouthshut.png" id="mouthshut"/>
 </div>
 <div class="col-xs-1">
-    <img src="smiley1/nice.png" id="nice"/>
+    <img src="vue/smiley1/nice.png" id="nice"/>
 </div>
 <div class="col-xs-1">
-    <img src="smiley1/omg.png" id="omg"/>
+    <img src="vue/smiley1/omg.png" id="omg"/>
 </div>
 <div class="col-xs-1">
-    <img src="smiley1/sad.png" id="sad"/>
+    <img src="vue/smiley1/sad.png" id="sad"/>
 </div>
 </div>
 
@@ -44,34 +44,34 @@
 
 <div class="row">
 <div class="col-xs-1">
-    <img src="emotes/e1.gif" />
+    <img src="vue/emotes/e1.gif" />
 </div>
 <div class="col-xs-1">
-    <img src="emotes/e2.gif" id=""/>
+    <img src="vue/emotes/e2.gif" id=""/>
 </div>
 <div class="col-xs-1">
-    <img src="emotes/e3.gif" id=""/>
+    <img src="vue/emotes/e3.gif" id=""/>
 </div>
 <div class="col-xs-1">
-    <img src="emotes/e4.gif" id=""/>
+    <img src="vue/emotes/e4.gif" id=""/>
 </div>
 <div class="col-xs-1">
-    <img src="emotes/e5.gif" id=""/>
+    <img src="vue/emotes/e5.gif" id=""/>
 </div>
 <div class="col-xs-1">
-    <img src="emotes/e6.gif" id=""/>
+    <img src="vue/emotes/e6.gif" id=""/>
 </div>
 <div class="col-xs-1">
-    <img src="emotes/e7.gif" id=""/>
+    <img src="vue/emotes/e7.gif" id=""/>
 </div>
 <div class="col-xs-1">
-    <img src="emotes/e8.gif" id=""/>
+    <img src="vue/emotes/e8.gif" id=""/>
 </div>
 <div class="col-xs-1">
-    <img src="emotes/e9.gif" id=""/>
+    <img src="vue/emotes/e9.gif" id=""/>
 </div>
 <div class="col-xs-1">
-    <img src="emotes/e10.gif" id=""/>
+    <img src="vue/emotes/e10.gif" id=""/>
 </div>
 
 

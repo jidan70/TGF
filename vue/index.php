@@ -6,10 +6,10 @@ session_start();
 <head>
   <meta charset="utf-8">
   <title>Team Gone Fly</title>
-  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap_cyborg.min.css">
-  <link rel="stylesheet" href="css/tgf.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="vue/bootstrap/dist/css/bootstrap_cyborg.min.css">
+  <link rel="stylesheet" href="vue/css/tgf.css">
+  <link rel="stylesheet" href="vue/css/animate.css">
+  <link rel="stylesheet" href="vue/font-awesome/css/font-awesome.min.css">
   <style>
   .icon-soc{
     color:#4682b4;

@@ -9,5 +9,5 @@ include('../modele/connexion_bdd.php');
       'title' => $_POST['title'],
     ));
 
-    header('Location: ../vue/videos.php');
+    header('Location: ../videos');
   }

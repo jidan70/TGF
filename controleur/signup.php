@@ -38,15 +38,15 @@
       $_SESSION['id_log'] = $id_selected['id'];
 
       $selection_id->closeCursor();
-      header('Location: ../vue/index.php');
+      header('Location: ../index');
       }
     }
     else
     {
-    header('Location: ../vue/index.php');
+    header('Location: ../index');
     }
   }
   else
   {
-    header('Location: ../vue/index.php');
+    header('Location: ../index');
   }

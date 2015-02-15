@@ -6,4 +6,4 @@ $_SESSION = array ();
 
 session_destroy();
 
-header('Location: ../vue/index.php');
+header('Location: ../index');
